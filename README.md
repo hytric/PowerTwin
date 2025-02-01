@@ -105,14 +105,15 @@ curl -v -u "ditto:ditto" \
 
 <br>
 
-### 3. Transformer 기반 모델 학습
+### 3. 모델 학습
 
 전력 및 기상 데이터를 기반으로 예측 모델을 학습합니다.
 현재 예측 모델로는 Linear Regression과 SVR을 사용하며,
-추후 Transformer 기반 모델로 확장할 수 있습니다.
+추후 Transformer, RNN 기반 모델로 확장할 수 있습니다.
 ```bash
 python training.py
 ```
+
 학습 완료 후, 다음 파일들이 result/ 또는 static/result/에 저장됩니다.
 	•	scaler_X.pkl (입력 데이터 스케일러)
 	•	scaler_y.pkl (타깃 데이터 스케일러)
@@ -212,20 +213,6 @@ curl -X GET http://localhost:8085/api/date/2020-01-01
 •	python sand_data.py  
 5.	사용자 UI 실행 (Flask 기반)  
 •	python show_data.py → http://localhost:8085/  
-
-<br>
-
-### 🔧 FAQ  
- 
-**Q1. 학습된 모델을 재사용하려면?**  
-	•	결과 파일(transformer_model.pth, linear_regression_model.pkl, svr_pipeline_model.pkl)과 스케일러 파일을 유지하면, 재학습 없이 모델을 바로 로드하여 예측할 수 있습니다.
-
-**Q2. Ditto에 데이터가 정상적으로 저장되었는지 확인하는 방법은?**  
-	•	http://localhost:8080/ui/에서 Ditto Explorer를 통해 Thing과 Feature 정보를 확인하거나,  
-	•	API 호출로 GET /api/2/things/mycompany:powerDevice/features/sensor_<DATE>/properties를 통해 확인할 수 있습니다.
-
-**Q3. 데이터 전송 주기를 빠르게 테스트하려면?**  
-	•	sand_data.py의 interval 값을 600(10분)에서 1 또는 2초로 변경하여 테스트할 수 있습니다.
 
 <br>
 
