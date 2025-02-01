@@ -8,34 +8,16 @@
 
 ---
 
-## 🛠 프로젝트 구성
-
-project-root/  
-├── dataset/                     # 전력 사용량 및 날씨 데이터셋 폴더  
-│   ├── train/                   # 학습용 데이터셋  
-│   └── test/                    # 테스트용 데이터셋  
-├── result/                      # 학습된 모델, 스케일러, 분석 결과 이미지 저장 폴더  
-│   └── linear_regression_model.pkl  
-│   └── svr_pipeline_model.pkl  
-├── static/                      # Flask UI에서 사용할 정적 파일 폴더  
-│   └── result/                  # EDA 및 평가 결과 이미지 (pairplot.png,   heatmap.png, evaluation_metrics.png, actual_vs_predicted.png)  
-├── ui/                          # React 기반 사용자 UI (차트 시각화)  
-├── Dockerfile                   # Ditto, MongoDB, Nginx 컨테이너 구성  
-├── docker-compose.yml           # Docker 컨테이너 실행 스크립트  
-├── data_visulaization_EDA.py    # Linear Regression, SVR 모델 학습 코드  
-├── sand_data.py                 # Ditto로 전력/기상 데이터 전송 및 예측 결과   업데이트 코드  
-├── show_data.py                 # Flask 기반 API 및 데이터 시각화 UI (예: /api/  dates, /api/date/)  
-├── sampling.py                  # 예측 샘플링 코드 (SklearnSampler 클래스)  
-└── README.md                    # 이 파일  
-
----
-
 ### Ditto 
 ![Ditto](./assets/image2.png)  
 
 ### UI
-<img src="./assets/image1.png" alt="이미지 1" style="display: inline-block; width: 40%;">
-<img src="./assets/image.png" alt="이미지 2" style="display: inline-block; width: 53.5%;">
+<p align="center">
+  <img src="./assets/image1.png" width="37%">
+  <img src="./assets/image.png" width="50%">
+</p>
+
+<br>
 
 ## 🚀 실행 방법
 
