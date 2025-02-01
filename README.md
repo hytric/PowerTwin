@@ -1,4 +1,4 @@
-# 🔌 Ditto + Transformer 기반 전력 예측 시스템
+# 🔌 Ditto + Regression model 기반 전력 예측 시스템
 
 이 프로젝트는 **Eclipse Ditto**를 활용하여 전력 및 기상 데이터를 수집하고,  
 전력 소비 예측을 위해 **Linear Regression, SVR 기반 모델**을 적용하는 디지털 트윈 시스템입니다.  
@@ -16,6 +16,13 @@
   <img src="./assets/image1.png" width="37%">
   <img src="./assets/image.png" width="50%">
 </p>
+
+<br>
+
+## 🔹 Digital Twin 이란?  
+현실 세계의 물리적인 객체(또는 시스템)를 디지털 공간에 동일하게 복제한 가상 모델  
+단순한 데이터 저장소가 아니라, 실제 시스템과의 상호작용 및 예측 분석을 포함  
+[Awesome digital twin](https://github.com/bulentsoykan/awesome-digital-twins)
 
 <br>
 
