@@ -24,6 +24,13 @@
 단순한 데이터 저장소가 아니라, 실제 시스템과의 상호작용 및 예측 분석을 포함  
 [Awesome digital twin](https://github.com/bulentsoykan/awesome-digital-twins)
 
+[카이스트 Digital twin 강좌](https://youtube.com/playlist?list=PLzZ7PPT4KK5pbRe4k9FZSgY2vZ_ifBEy5&si=Yoi_n2G_4_siWybV)
+
+[최재홍 교수 설명](https://youtu.be/PaPkqPBgjKQ?si=GaEJid4B_HLmoT1j)
+> 스크린 골프, 네비게이션, 스타벅스 사이렌 오더 같은 것들 또한 디지털 트윈의 일종이다.  
+**데이터**를 가지고 **현실세계를 모방**하고 **미래를 예측**하는 것이 디지털 트윈.  
+수치와 그래프로 현상이 다 파악되면 하나의 디지털 트윈 시스템으로 볼 수 있다. 3D 시각화가 꼭 필요한 것은 아니다.  
+
 <br>
 
 ## 🚀 실행 방법
